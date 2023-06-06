@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalMove = 0f;
 
-    bool jump = false;  
+    bool jump = false;
 
     public float runSpeed = 40f;
     void Start()
@@ -26,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
             jump = true;    
         }
 
-
-
     }
 
     private void FixedUpdate()
@@ -35,6 +34,5 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
     }
-
 
 }
