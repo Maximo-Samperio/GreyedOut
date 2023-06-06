@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sunrise.unity
     guid: e8ee5f20d9e4a3f4ab517845d26f44d5
+  - enabled: 1
+    path: Assets/Scenes/Day.unity
+    guid: f0a44af8151767c40b54ebca073f274a
   m_configObjects: {}
