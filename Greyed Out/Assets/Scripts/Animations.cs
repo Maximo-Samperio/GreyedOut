@@ -144,11 +144,11 @@ public class Animations : MonoBehaviour
             state = MovementState.idle;
         }
 
-        if (rb.velocity.y > 0.01f)
+        if (rb.velocity.y > 0.2f)
         {
             state = MovementState.jumping;
         }
-        else if (rb.velocity.y < -0.01f)
+        else if (rb.velocity.y < -0.2f)
         {
             state = MovementState.falling;
         }
